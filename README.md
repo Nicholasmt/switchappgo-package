@@ -36,8 +36,9 @@ use Nicholasmt\Switchappgo\Switchappgo;
 Initialize a transaction use the code below in Method:
 
 ```
+     $txt_ref = substr(rand(0,time()),0,5);
      $data_array = array(
-        'tx_ref'=>12345,/*random number*/
+        'tx_ref'      =>  $txt_ref,/*random number*/
         'description' => 'This is a test payment',
         'title'       => 'My First Transaction Using SwitchApp',
         'amount'      => 1000,
@@ -106,9 +107,9 @@ class SwitchAppController extends Controller
     
     public function switchappgo()
     {
-            
+            $txt_ref = substr(rand(0,time()),0,5);
             $data_array = array(
-                'tx_ref'      =>  12345, /*random number*/
+                'tx_ref'      =>  $txt_ref, /*random number*/
                 'description' => 'This is a test payment',
                 'title'       => 'My First Transaction Using SwitchApp',
                 'amount'      => 1000,
