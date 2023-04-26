@@ -6,7 +6,7 @@
 
  class Switchappgo extends Facade
  {
-       public static function SwitchappAPI($method, $url, $data){
+       public function SwitchappAPI($method, $url, $data){
             $curl = curl_init();
             switch ($method){
             case "POST":
