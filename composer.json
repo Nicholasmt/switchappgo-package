@@ -1,0 +1,39 @@
+{
+    "name": "nicholasmt/switchappgo-library",
+    "description": "This an Api library package for switchappgo sysyem",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tochukwu Nicholas",
+            "email": "nicholasmt09@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nicholasmt/switchappgo-package"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nicholasmt\\Switchappgo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Nicholasmt\\Switchappgo\\Providers\\SwitchappgoSeviceProvider"
+            ],
+            "aliases":{
+              "Switchappgo":"Nicholasmt\\Switchappgo\\Switchappgo"
+            }
+        }
+    }
+}
