@@ -1,6 +1,6 @@
 {
     "name": "nicholasmt/switchappgo-library",
-    "description": "This an Api library package for switchappgo sysyem",
+    "description": "This is a Laravel library package for switchApp Api",
     "type": "library",
     "require": {
         "php": ">=7.0",
