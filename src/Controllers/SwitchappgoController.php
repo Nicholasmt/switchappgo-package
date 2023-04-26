@@ -11,6 +11,7 @@ class SwitchappgoController
  
     public function switchappgo()
     {
+            $switchappgo = new Switchappgo();
             $txt_ref = substr(rand(0,time()),0,5);
             $data_array = array(
                 'tx_ref'=>$txt_ref,/*random number*/
@@ -27,13 +28,13 @@ class SwitchappgoController
                                     ),
             );
 
-            $call_api = Switchappgo::SwitchappAPI('POST', 'https://api.switchappgo.com/v1/transactions/server-initialize/', json_encode($data_array));
+            $call_api = $switchappgo->SwitchappAPI('POST', 'https://api.switchappgo.com/v1/transactions/server-initialize/', json_encode($data_array));
             $response = json_decode($call_api, true);
 
             if($response['status'] == 'success')
             {
                 //call for verify transction
-                $verify_transaction = Switchappgo::callAPI('GET', 'https://api.switchappgo.com/v1/transactions/verify/'.$txt_ref, false);
+                $verify_transaction =$switchappgo->SwitchappAPI('GET', 'https://api.switchappgo.com/v1/transactions/verify/'.$txt_ref, false);
                 $verify_response = json_decode($verify_transaction, true);
 
                 if($verify_response['status'] == 'success')
