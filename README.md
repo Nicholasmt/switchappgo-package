@@ -36,6 +36,8 @@ use Nicholasmt\Switchappgo\Switchappgo;
 Initialize a transaction use the code below in Method:
 
 ```
+      
+     $switchappgo = new Switchappgo();
      $txt_ref = substr(rand(0,time()),0,5);
      $data_array = array(
         'tx_ref'      =>  $txt_ref,/*random number*/
@@ -51,7 +53,7 @@ Initialize a transaction use the code below in Method:
         'address'=>'Enugu',
         ),
     );
-
+    
     $call_api = $switchappgo->SwitchappAPI('POST', 'https://api.switchappgo.com/v1/transactions/server-initialize/', json_encode($data_array));
     $response = json_decode($call_api, true);
 
