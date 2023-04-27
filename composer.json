@@ -3,7 +3,7 @@
     "description": "This is a Laravel library package for switchApp Api",
     "type": "library",
     "require": {
-        "php": ">=7.0 <8.2||>=8.0",
+        "php": ">=7.0|^8.2|>=8.0",
         "illuminate/support": ">=7.1"
      },
     
