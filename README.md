@@ -93,7 +93,7 @@ Route::get('switchapp', [App\Http\Controllers\SwitchAppController::class, 'switc
 
 ```
 
-What you Controller will look like:
+What the Controller will look like:
 
 ```
 <?php
