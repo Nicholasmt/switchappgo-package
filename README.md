@@ -28,14 +28,14 @@ php artisan make:controller SwitchAppController
 
 Require Package using:
 
-```
+```php
 use Nicholasmt\Switchappgo\Switchappgo;
 
 ```
 
 Initialize a transaction use the code below in Method:
 
-```
+```php
       
      $switchappgo = new Switchappgo();
      $txt_ref = substr(rand(0,time()),0,5);
@@ -88,14 +88,14 @@ Initialize a transaction use the code below in Method:
 
 Then Finally Setup Route
 
-```
+```php
 Route::get('switchapp', [App\Http\Controllers\SwitchAppController::class, 'switchappgo'])->name('switchappgo');
 
 ```
 
 What the Controller will look like:
 
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -160,6 +160,30 @@ class SwitchAppController extends Controller
 }
 
 ```
+Note: if You encounter this error which means you are using "nette/schema/tree/v1.2.2" which requires php version of ">=7.1 <8.2".
+
+```terminal
+Your requirements could not be resolved to an installable set of packages.
+- nette/schema v1.2.2 requires php >=7.1 <8.2 -> your php version (8.2.4) does not satisfy that requirement.
+
+```
+
+To Solve simply go the roof folder of your project and open "composer.lock" file
+
+Search for "name": "nette/schema" and go under "require" and update the php version to " >=7.1 " and save as below
+
+```json
+
+ "require": {
+                "nette/utils": "^2.5.7 || ^3.1.5 ||  ^4.0",
+                "php": ">=7.1"
+            },
+            
+```
+
+Then install again.
+
+
 
 Don't forget to like.
 
