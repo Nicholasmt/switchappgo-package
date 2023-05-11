@@ -62,7 +62,7 @@ use Nicholasmt\Switchappgo\Switchappgo;
 
 ```
 
-Verify transaction
+To verify transaction using the API callback use the code below
 
 ```php
      
@@ -83,7 +83,7 @@ Verify transaction
            
 ```
 
-Then Finally Setup Route
+Then Finally Setup callback Route
 
 ```php
 Route::get('switchapp', [App\Http\Controllers\SwitchAppController::class, 'switchappCallback'])->name('switchappgo');
