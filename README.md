@@ -4,11 +4,11 @@
 
 This is a laravel library package for SwitchApp Api payment engine.
 
-# To get Started 
+# To get Started Run 
 
  
 ```
-run composer require nicholasmt/switchappgo-library
+composer require nicholasmt/switchappgo-library
 
 ```
 
