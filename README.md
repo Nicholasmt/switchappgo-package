@@ -12,7 +12,7 @@ composer require nicholasmt/switchappgo-library
 
 ```
 
-Note: if You encounter this error which means you are using "nette/schema/v1.2.2" which requires php version of ">=7.1 <8.2".
+Note: if You encounter this or any other error which means you are using the old version of that package
 
 ```console
 
@@ -21,20 +21,15 @@ Your requirements could not be resolved to an installable set of packages.
 
 ```
 
-To Solve simply go the roof folder of your project and open "composer.lock" file
+To Resolve simply run
+ 
+```console
 
-Search for "name": "nette/schema" and go under "require" and update the php version to " >=7.1 " and save as below
+ composer update
+ 
+ ```
 
-```json
-
- "require": {
-                "nette/utils": "^2.5.7 || ^3.1.5 ||  ^4.0",
-                "php": ">=7.1"
-            },
-            
-```
-
-Then run composer again.
+Afer successfull update then install the package again using.
 
 ```
 composer require nicholasmt/zoom_library
