@@ -29,11 +29,13 @@ To Resolve simply run
  
  ```
 
-Afer successfull composer update then install the package again with "composer require nicholasmt/zoom_library".
+Afer successfull composer update then install the package again with 
+``` composer require nicholasmt/zoom_library ```
 
 Note: if you encounter any error based on poor network on updating composer, 
 
-just backup the vender file, delete and run composer update again with "composer update"
+just backup the vender file, delete and run composer update again with 
+``` composer update ```
  
 
 Configuire .env file as below:
