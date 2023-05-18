@@ -31,6 +31,15 @@ To Resolve simply run
 
 Afer successfull update then install the package again using.
 
+Note: if you encounter any error based on poor network on updating composer, 
+
+just backup the vender file, delete and run composer update again
+
+```
+composer update
+
+```
+
 ```
 composer require nicholasmt/zoom_library
 
