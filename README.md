@@ -23,7 +23,7 @@ Your requirements could not be resolved to an installable set of packages.
 
 To Resolve simply run
  
-```console
+```
 
  composer update
  
