@@ -29,7 +29,7 @@ To Resolve simply run
  
  ```
 
-Afer successfull composer update then install the package again with 
+After successfull composer update then install the package again with 
 ``` composer require nicholasmt/zoom_library ```
 
 Note: if you encounter any error based on poor network on updating composer, 
