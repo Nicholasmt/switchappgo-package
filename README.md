@@ -17,7 +17,6 @@ Note: if You encounter this or any other error which means you are using the old
 ```console
 
 Your requirements could not be resolved to an installable set of packages.
-- nette/schema v1.2.2 requires php >=7.1 <8.2 -> your php version (8.2.4) does not satisfy that requirement.
 
 ```
 
